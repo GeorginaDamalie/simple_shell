@@ -17,6 +17,7 @@ int search_path(char **cmd);
 char *build_path(char *token, char *dir);
 char *get_env(char *name);
 int free_ptr(void **ptr);
+int free_ptr(void **ptr);
 int str_length(char *str);
 char *str_duplicate(char *str);
 int str_compare(char *str1, char *str2, int number);
