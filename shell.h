@@ -23,6 +23,15 @@ char *str_duplicate(char *str);
 int str_compare(char *str1, char *str2, int number);
 char *str_concat(char *str1, char *str2);
 void str_reverse(char *str);
+typedef struct info_s {
+   char *username;       
+    char *current_dir;   
+    int num_commands;
+} info_t;
+
+int is_command(info_t *shell_info, char *file_path);
+char *duplicate_characters(char *path_str, int start_index, int stop_index);
+char *find_command_path(info_t *shell_info, char *path_str, char *cmd);
 
 #endif
 
