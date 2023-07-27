@@ -32,6 +32,10 @@ typedef struct info_s {
 int is_command(info_t *shell_info, char *file_path);
 char *duplicate_characters(char *path_str, int start_index, int stop_index);
 char *find_command_path(info_t *shell_info, char *path_str, char *cmd);
+int _strlen(char *str);
+int _strcmp(char *str1, char *str2);
+char *starts_with(const char *haystack, const char *needle);
+char *_strcat(char *dest, char *src);
 
 #endif
 
