@@ -36,6 +36,12 @@ int _strlen(char *str);
 int _strcmp(char *str1, char *str2);
 char *starts_with(const char *haystack, const char *needle);
 char *_strcat(char *dest, char *src);
+char *get_history_file(info_t *info);
+int write_history(info_t *info);
+int read_history(info_t *info);
+int build_history_list(info_t *info, char *buf, int linecount);
+int renumber_history(info_t *info);
+
 
 #endif
 
