@@ -6,8 +6,8 @@
 #include <unistd.h>
 #include <string.h>
 #include <errno.h>
-#include "shellvars.h"
-#include "history.h"
+#include <shellvars.h>
+#include <history.h>
 
 
 unsigned int check_delim(char c, const char *str);
